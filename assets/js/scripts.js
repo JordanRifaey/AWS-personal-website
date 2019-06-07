@@ -17,13 +17,14 @@ jQuery(function ($) {
         document.getElementById('jrp').style.opacity = opacity;
         document.getElementById('iconbar').style.opacity = opacity;
         document.getElementById('m-icon').style.opacity = opacity;
-        if (window.pageYOffset <= 50 && scrolled === false) {
-            scrolled = true;
-            $('html, body').animate({
-                scrollTop: $("#resume").offset().top
-            }, 2000);
-            e.preventDefault();
-        }
+        document.getElementById('intro-sub').style.opacity = opacity;
+        // if (window.pageYOffset <= 5 && scrolled === false) {
+        //     scrolled = true;
+        //     $('html, body').animate({
+        //         scrollTop: $("#resume").offset().top
+        //     }, 5000);
+        //     e.preventDefault();
+        // }
 
         if (window.pageYOffset >= 900) {
             document.getElementById("nav").style.background = "rgba(255, 255, 255, 0.7)"
